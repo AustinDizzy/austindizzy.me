@@ -78,3 +78,6 @@ code {
 		display: inline-block;
 	}
 }
+.img-portfolio {
+	border: 1px solid #ccc;
+}
