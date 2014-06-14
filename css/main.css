@@ -1,0 +1,80 @@
+body, html {
+	background-color: #F6F5F6;
+	height: 100%;
+}
+a {
+	color: #375D81;
+}
+#name{
+	font-family: 'EB Garamond';
+	font-size: 8.9em;
+}
+#links {
+	padding-bottom: 15px;
+	border-bottom: 1px solid #ddd;
+}
+#links > ul > li > a {
+	color: #333 !important;
+}
+dt {
+	font-family: 'Alegreya';
+	font-size: 36px;
+	font-weight: 400;
+}
+dd, dt {
+	line-height: 1.8;
+}
+li {
+	list-style: none;
+}
+#service-list li {
+	list-style: square;
+}
+main {
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+	margin: 0 auto -63px;
+	padding: 0 0 73px;
+}
+footer {
+	height: auto;
+	border: 0;
+	background-color: #f2f2f2;
+}
+footer .container span {
+	text-align: center;
+	display: block;
+	font-family: 'Clear Sans';
+}
+footer .container span a:hover {
+	text-decoration: none !important;
+	border-bottom: 1px dotted black;
+}
+footer .col-md-3:nth-child(odd) {
+	height: 3px;
+	background-color: #00447c;
+}
+footer .col-md-3:nth-child(even) {
+	height: 3px;
+	background-color: #eeb111;
+}
+#contact+dd a {
+	font-size: 3.5em;
+	padding: 0 5px;
+}
+code {
+	color: #375D81;
+	background-color: #F2F2F9;
+}
+#donate+dd > span {
+	display: block;
+}
+@media (max-width: 767px) {
+	#name {
+		font-size: 4em;
+	}
+	ul.nav.nav-pills.nav-justified > li {
+		display: inline-block;
+	}
+}
