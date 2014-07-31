@@ -16,6 +16,7 @@ html, body{
 .page-header {
 	font-family:'aruallight';
 	text-align: center;
+	background-color: rgba(246, 245, 246, 0.5);
 }
 
 .carousel-control {
