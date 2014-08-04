@@ -19,16 +19,16 @@
                     pause: "hover"
                 });
                 $('.btn-git').click(function(){
-                    _gaq.push(['_trackEvent', 'GitHub', 'Click']);
+                    ga('send', 'event', 'button', 'click', 'GitHub');
                 });
                 $('#surveyForm').click(function(){
-                    _gaq.push(['_trackEvent', 'Survey', 'Click']);
+                    ga('send', 'event', 'button', 'click', 'Survey');
                 });
                 $('#androidButton').click(function(){
-                    _gaq.push(['_trackEvent', 'Android', 'Click']);
+                    ga('send', 'event', 'button', 'click', 'Android');
                 });
                 $('#glassbutton').click(function(){
-                    _gaq.push(['_trackEvent', 'Glass', 'Click']);
+                    ga('send', 'event', 'button', 'click', 'Glass');
                 });
             });
         </script>
