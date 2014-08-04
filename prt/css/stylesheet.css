@@ -9,6 +9,13 @@
 	font-style: normal;
 }
 
+header .jumbotron {
+	color: white;
+	background-image: url('http://i.imgur.com/ntbHN5E.png');
+	background-size: cover;
+	background-position-y: 25%;
+}
+
 article {
 	padding-bottom: 45px;
 }

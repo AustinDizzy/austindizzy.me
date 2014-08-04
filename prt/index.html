@@ -36,14 +36,53 @@
         <![endif]-->
     </head>
     
-    <body style="overflow-y:hidden">
-        <article style="min-height: 100%;height: auto !important;height: 100%;">
+    <body>
+        <article>
         <header>
-            <div class="page-header" style="margin:0 auto 20px;">
-                 <h1 style="margin-top:0;padding-top:.67em">PRT STATUS <small>on GLASS</small></h1>
+            <div class="jumbotron text-center">
+                <div class="container">
+                    <h1>WVU PRT Status</h1>
+                    <p>Official mobile application of <img src="img/wvu-white.png" height="28px"></p>
+                    <p style="font-size:75%">Currently available on <a href="#android" style="color:#A4C739">Android</a> and <a href="#glass" style="color:lightgrey">Google Glass</a></p>
+                </div>
             </div>
         </header>
-        <div class="container">
+
+        <section>
+            <!-- Android section -->
+            <div class="container" id="android">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h3 class="text-center">on <span style="color:#A4C639;display:inline-block"><i class="fa fa-android"></i>Android</span></h3>
+                        <ul>
+                            <li>Get automatically notified <s>if</s> when the PRT goes down unexpectedly.</li>
+                            <li>Know about delays or closings before its ever announced at the stations.</li>
+                            <li>Fully compatible with Android Wear and Pebble.</li>
+                        </ul>
+                        <hr>
+                        <span class="row text-center">
+                            <span class="col-md-6 col-xs-12" style="margin-bottom:15px">
+                                <a class="btn btn-default btn-git" href="https://github.com/AustinDizzy/prtstatus-android">
+                                    <i class="fa fa-github fa-2x pull-left"></i> View source on GitHub
+                                </a>
+                            </span>
+                            <a href="javascript:alert('Coming soon!')">
+                                <img alt="Get it on Google Play" src="https://developer.android.com/images/brand/en_generic_rgb_wo_60.png" />
+                            </a>
+                        </span>
+                    </div>
+                    <div class="col-md-6">
+                        <img src="https://raw.githubusercontent.com/AustinDizzy/prtstatus-android/master/artwork/prt_promotion.png" height="420px">
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <hr>
+
+        <section>
+            <!-- Glass section -->
+            <div class="container" id="glass">
             <div class="row">
                 <div class="col-md-6">
                     <div id="carousel-example-generic" class="carousel slide">
@@ -67,42 +106,50 @@
                             </div>
                         </div>
                         <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
-                        	<span class="icon-prev"></span>
-  						</a>
- 						<a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
-    						<span class="icon-next"></span>
-  						</a>
+                            <span class="icon-prev"></span>
+                        </a>
+                        <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+                            <span class="icon-next"></span>
+                        </a>
                     </div>
                 </div>
                 <div class="col-md-6">
+                <h3 style="font-family:'aruallight'" class="text-center">on GLASS</h3>
                     <ul>
-                        <li>Get real-time notifications on the status of WVU's PRT system pushed right to your Google Glass™ timeline.</li>
-                        <li>Know about closings, matinenece, delays, and more before it's even announced, putting you one step ahead of the game.</li>
+                        <li>Get real-time notifications on the status of WVU's PRT system pushed right to your Google Glass&#0153; timeline.</li>
+                        <li>Get a <i>head's up</i> on the PRT; terrible pun intended.</li>
                         <li>Don't be late for work or your next class. Plan the route to your next destination ahead of time, accounting for any unexpected PRT delays or closings.</li>
                     </ul>
                     <hr>
-                    <span class="row text-center"><span class="col-md-6 col-xs-12" style="margin-bottom:15px">
-                        <a class="btn btn-default btn-git" href="https://github.com/AustinDizzy/prt-glass">
-                            <i class="fa fa-github fa-2x pull-left"></i> View source on GitHub
-                        </a>
-                    </span>
-                    <span class="col-md-6 col-xs-12"><a href="javascript:alert('The app is currently offline while I work on fixing it up to be more reliable and persistent. Sorry for any inconveniences. I guess this is condescending; a service monitoring service being down. Maybe I should make a &quot;PRT STATUS on GLASS STATUS on GLASS&quot; app. :P')" id="glassbutton"><img src="img/getitonglass.png" /><img src="img/getitonglass_hover.png" style="display:none;"/></a></span>
-                    <span class="col-md-12 col-xs-12"><a href="https://docs.google.com/forms/d/179GSm0bcXPoYISj3VOPHoE82iFbP2cJkgrx7LOc52BQ/viewform" target="_blank" id="surveyForm">Don't have Google Glass? Click here for a solution!</a></span>
+                    <span class="row text-center">
+                        <span class="col-md-6 col-xs-12" style="margin-bottom:15px">
+                            <a class="btn btn-default btn-git" href="https://github.com/AustinDizzy/prt-glass">
+                                <i class="fa fa-github fa-2x pull-left"></i> View source on GitHub
+                            </a>
+                        </span>
+                        <span class="col-md-6 col-xs-12">
+                            <a href="javascript:alert('The app is currently offline while I work on fixing it up to be more reliable and persistent. Sorry for any inconveniences.')" id="glassbutton">
+                                <img src="img/getitonglass.png" />
+                                <img src="img/getitonglass_hover.png" style="display:none;"/>
+                            </a>
+                        </span>
                     </span>
                 </div>
             </div>
+        </section>
+    </article>
+
+    <footer>
+        <!-- Blue & Old Gold stripes -->
+        <span class="col-md-3 col-xs-3"></span><span class="col-md-3 col-xs-3"></span><span class="col-md-3 col-xs-3"></span><span class="col-md-3 col-xs-3"></span>
+        <div class="container">
+            <span>Made by the hands of a proud Mountaineer, in Morgantown, WV.</span>
+            <span><a href="http://austindizzy.me" style="color:inherit;">2014 &copy; Austin Dizzy</a></span>
+            <span><span style="font-family:'aruallight';display:inline-block;">GLASS</span> "Glass" is a trademark of Google Inc.</span>
         </div>
-        </article>
-        <footer>
-            <span class="col-md-3 col-xs-3"></span><span class="col-md-3 col-xs-3"></span><span class="col-md-3 col-xs-3"></span><span class="col-md-3 col-xs-3"></span>
-            <div class="container">
-                <span>Made by the hands of a proud Mountaineer, in Morgantown, WV.</span>
-                <span><a href="http://austindizzy.me" style="color:inherit;">2014 &copy; Austin Dizzy</a></span>
-                <span><span style="font-family:'aruallight';display:inline-block;">GLASS</span> "Glass" is a trademark of Google Inc.</span>
-            </div>
-        </footer>
-        <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+    </footer>
+
+        <script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
         <script src="//austindizzy.me/js/ga.js"></script>
     </body>
-
 </html>
