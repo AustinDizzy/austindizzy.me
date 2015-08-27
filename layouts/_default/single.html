@@ -1,0 +1,18 @@
+{{ partial "header.html" . }}
+  {{ partial "subheader.html" . }}
+  <div class="container">
+    <h1 style="text-align:center">
+      <a href='{{ .Permalink }}'>{{ .Title }}</a>
+    </h1>
+    <div style="text-align:center;color:grey;">
+      Posted on {{ .Date.Format "Mon, Jan 2, 2006" }} - {{ .WordCount }} Words, approx. {{.ReadingTime}} min.
+    </div>
+    <div>
+      {{ .Content }}
+    </div>
+    <div>
+      {{ template "_internal/disqus.html" . }}
+    </div>
+  </div>
+  {{ partial "subfooter.html" . }}
+{{ partial "footer.html" . }}

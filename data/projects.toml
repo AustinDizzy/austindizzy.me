@@ -1,0 +1,31 @@
+[[project]]
+name = "Davine"
+link = "http://www.davine.co"
+source = "https://github.com/AustinDizzy/davine"
+desc = "Davine is an open data, open source, open operations analytics repository for Twitter's popular 6-second video social media network, Vine."
+color = "#00BF8F"
+
+[[project]]
+name = "Whiteboard"
+link = "https://github.com/AustinDizzy/whiteboard"
+desc = "A community collaborative social issue tracker for tracking student interest in higher education operations issues. Used by the Scott-Braxton 2015 WVU SGA campaign. Written in Go, runs on Google App Engine for pennies/mo."
+color = "#004D58"
+
+[[project]]
+name = "PRT Status"
+link = "https://austindizzy.me/prt/"
+source = "https://github.com/AustinDizzy/prtstatus-go"
+desc = "PRT Status is a service which monitors West Virginia University's Personal Rapid Transit system and notifies students, faculty, and staff on service disruptions."
+color = "#ED8B00"
+
+[[project]]
+name = "Share"
+link = "https://share.withglass.co"
+desc = "Share is a with Glass initiative, utilizing Google Glass to share the beautiful moments you experience through them."
+color = "#046380"
+
+[[project]]
+name = "with Glass"
+link = "https://withglass.co"
+desc = "with Glass is a project to incorporate the niceties and usefulness of Google Glass seamlessly into your daily life to make everything easier."
+color = "#F2385A"

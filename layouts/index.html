@@ -1,0 +1,69 @@
+{{ partial "header.html" . }}
+    {{ partial "subheader.html" . }}
+    <div class="container">
+      <div class="pure-g">
+        <div class="pure-u-1-5">
+          <img class="pure-img" src="{{ .Site.Params.avatar }}">
+          <br>
+          <div><i class="fa fa-envelope"></i> <span class="encmail">please enable javascript</span></div>
+          <div><i class="fa fa-key"></i> <a href="https://keybase.io/austindizzy/key.asc">my PGP key</a></div>
+        </div>
+        <div class="pure-u-1-5"></div>
+        <div class="pure-u-3-5">
+          <span style="font-size:1.5em; font-weight:bold;font-family:'PT Sans'">Who am I?</span>
+          <p>
+            My name (read as: pseu&bull;do&bull;nym) is Austin Dizzy and I'm a security-oriented software engineer, currently studying at West Virginia University, where I also work in our Office of Information Security Services.
+          </p>
+          <p>
+            I've been doing this computer thing for suprisingly about a decade now, where I've mainly focused my efforts in security research, software engineering, and security awareness.
+          </p>
+        </div>
+      </div>
+      <div class="pure-g">
+        <div class="pure-u-1">
+          <h2>As seen online</h2>
+          <p>If I'm on a social media network, it's typically under the name AustinDizzy. Below is a list of all sites you can connect with me on.</p>
+          <div id="social-links">
+          {{ range $.Site.Data.social.profile }}
+            <a href="{{ .link }}" class="pure-menu-link"><i class="fa fa-{{ .name }}"></i> {{ .username }}</a>
+          {{ end }}
+          </div>
+          <h2>Projects</h2>
+          <div class="pure-menu">
+            <ul class="pure-menu-list" id="projects">
+            {{ range $.Site.Data.projects.project }}
+              <li class="pure-menu-item" data-color="{{ .color }}">
+                <span>
+                  <b style="font-size: 110%">{{ .name }}</b> -
+                  {{if .link}}
+                    <a href="{{ .link | safeURL }}" target="_blank">site</a>
+                  {{end}}
+                  {{if .source}}
+                    , <a href="{{.source}}" target="_blank">source</a>
+                  {{end}}
+                </span>
+                <div>{{.desc | markdownify}}</div>
+              </li>
+            {{ end }}
+            </ul>
+          </div>
+          <h2 id="consulting">Consulting</h2>
+          <div>
+            <p>I offer my software engineering, penetration testing, security researching, and other various services upon request that I feel I can offer to the best of my abilities.</p>
+            <p>If you or your business are interested, please contact me at <span class="encmail">[please enable JavaScript]</span> or any other contact methods listed on this page.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    {{ partial "subfooter.html" . }}
+
+    <script type="text/javascript">
+      var projects = document.getElementById("projects").children;
+      for(var i = 0; i < projects.length; i++)
+        projects[i].style.borderLeft = "2px solid " + projects[i].getAttribute("data-color");
+
+      var m = '<n uers="znvygb:qvmml@jbj.pbz">qvmml@jbj.pbz</n>';
+      for(var i = 0; i < document.getElementsByClassName("encmail").length; i++)
+        document.getElementsByClassName("encmail")[i].innerHTML = m.replace(/[a-zA-Z]/g,function(c){return String.fromCharCode((c<="Z"?90:122)>=(c=c.charCodeAt(0)+13)?c:c-26);});
+    </script>
+{{ partial "footer.html" . }}

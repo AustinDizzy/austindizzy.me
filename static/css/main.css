@@ -1,0 +1,66 @@
+a:visited:not(.pure-menu-link), a:not(.pure-menu-link) {
+  text-decoration: none;
+  color: #2980B9;
+}
+
+#brand-text {
+  font-weight: bold;
+  font-size: 2em;
+  display:block;
+  font-family: 'PT Sans';
+}
+#brand-text a {
+  color: inherit;
+}
+h1, h2, h3 {
+  font-family: 'PT Sans';
+}
+html, button, input, select, textarea,
+.pure-g [class *= "pure-u"] {
+    font-family: 'Open Sans';
+}
+header {
+  padding-bottom: 1em;
+  margin-bottom: 1.5em;
+  border-bottom: 1px solid gainsboro;
+  padding-top: 2.5em;
+}
+header > div {
+  margin: auto;
+}
+.container {
+  width: 720px;
+  margin: 0 auto;
+}
+#brand-link {
+  text-decoration: none;
+  color: #2D3E50;
+}
+#social-links > a {
+  display: inline-block !important;
+}
+#projects li {
+  margin-left: 2em;
+  padding-left: 0.5em;
+  margin-bottom: 1em;
+}
+footer {
+  background-color: #f2f2f2;
+  text-align: center;
+  margin-top: 5em;
+}
+footer > div.pure-g > div.pure-u-1-5 {
+  height: 5px;
+  margin: 0;
+  padding: 0;
+}
+footer > div.pure-g > div.pure-u-1-5:nth-of-type(odd) {
+  background-color:#002855;
+}
+footer > div.pure-g > div.pure-u-1-5:nth-of-type(even) {
+  background-color: #EAAA00;
+}
+footer > p:last-of-type {
+  margin-bottom: 0;
+  padding-bottom: 1em;
+}
