@@ -1,0 +1,66 @@
+==================================================================
+https://keybase.io/austindizzy
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://austindizzy.me
+  * I am austindizzy (https://keybase.io/austindizzy) on keybase.
+  * I have a public key with fingerprint 8CCC 05F7 2068 D9B3 877F  7944 9080 2BBF C328 0441
+
+To claim this, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "fingerprint": "8ccc05f72068d9b3877f794490802bbfc3280441",
+            "host": "keybase.io",
+            "key_id": "90802bbfc3280441",
+            "uid": "f797cb757a4eb0637ee0603f8c744600",
+            "username": "austindizzy"
+        },
+        "service": {
+            "hostname": "austindizzy.me",
+            "protocol": "https:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1413392890,
+    "expire_in": 157680000,
+    "prev": "cba4d34b786ddb18b2fc05f25fa79b587d59aefc08ca2a808f047d4e518a8d97",
+    "seqno": 5,
+    "tag": "signature"
+}
+
+with the aforementioned key, yielding the PGP signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v1.1.3
+Comment: https://keybase.io/crypto
+
+yMHjAnicbVFbSBRRGJ7NG25GvYSaS9HJEG1Zzu7O7MyspIHSS09GRZq1zuXMOlkz
+68zsesuslnrIhEKIirQwkURBIzQRkzWksovR5aE005e1qI2gJGmx7IzUU52Xw/lu
+/3/+f3xNAmG1/Eicb9IGzh62PI4sBok9Bd3xBsCrYh3wNoAqtHJJsuJHWkCTFQN4
+ASMIAqQk2gU9jMjyboamJZolSRYy0MXzkuB2MZAkncAOKlXddOAYntORQ1Yxhh8+
+WcTof/TBFQKn0QJPUzRHIh563DRC0APdEiPQJOmB0BTqSFO4owiruaBuyIoo19fX
+gUY7wERIFpDZtln9X5EDA3YQ0FRDFdQjmKs0jIDuNb1GXcAU1yDe9yfGx5suxY8d
+IaTpsqoArxMrBUM2c52k0+1mXQwL7QDVBmQN+WRTQdEeBuJj1kEhHCnwHCm6SZ5m
+PKLIOxneJZkzdFESR7M8xdAixXIIY4zAuTgGMhIkaZFElJPh8JBpYH6sWlGBl8Jt
+cn4cqct+hTOCGgKN9yLliYTFSiQnrTL3R1hT1/3d6mhbytLa3Dv52x3lr2NJ1z3N
+yQc6eu+mj8VvXOA/LCQT4+8/h4ptb2NDJ2stq0M1uf3707ZG+56UFXe0p9zs1zOK
+CndPWV+krZrcu+FLatX9c50PWuGm/keR2W+/BrfNPATNEVtbmA0LOU/H7D9th45V
+lPReO3NJvtJdT6QTTXkdB20zS52fetDCgCCOzPVlDW2J9trGLg7ndZW1xEoG932t
+TJgOFyEZnt+ZOK2/WY6Pj0QXr37Pjk76dtymbr18Nrp+Oi0+XDvbMyS9UwpS9Yys
+6tyiivbT9R9b7Zezu4wTjpzl4wnErsxXpaWxufmmludV8sbFzsKyzVON4YlTscyJ
+/N/I1RvM
+=SZVL
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/austindizzy
+
+==================================================================
+
