@@ -21,6 +21,11 @@
       </div>
       <div class="pure-g">
         <div class="pure-u-1">
+          {{ with index $.Site.Pages 0 }}
+            <p align="center">
+              <b>Most Recent Post:</b> <a href="{{.Permalink}}">{{.Title}}</a>
+            </p>
+          {{ end }}
           <h2>As seen online</h2>
           <p>If I'm on a social media network, it's typically under the name AustinDizzy. Below is a list of all sites you can connect with me on.</p>
           <div id="social-links">
@@ -50,7 +55,7 @@
           <h2 id="consulting">Consulting</h2>
           <div>
             <p>I offer my software engineering, penetration testing, security researching, and other various services upon request that I feel I can offer to the best of my abilities.</p>
-            <p>If you or your business are interested, please contact me at <span class="encmail">[please enable JavaScript]</span> or any other contact methods listed on this page.</p>
+            <p>If you or your business are interested in working with me, please contact me at <span class="encmail">[please enable JavaScript]</span> or any other contact methods listed on this page.</p>
           </div>
         </div>
       </div>
