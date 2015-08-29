@@ -56,12 +56,12 @@ link = "https://vine.co/AustinDizzy"
 [[profile]]
 name = "skype"
 username = "austin.dizzy"
-link = "skype:austin.dizzy?userinfo"
+link = "skype://austin.dizzy?userinfo"
 
 [[profile]]
 name = "stack-overflow"
 username = "Austin Dizzy"
-link = "http://stackoverflow.com/users/1204580/austin-dizzy"
+link = "https://careers.stackoverflow.com/austindizzy"
 
 [[profile]]
 name = "linkedin"
