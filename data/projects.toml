@@ -7,7 +7,8 @@ color = "#00BF8F"
 
 [[project]]
 name = "Whiteboard"
-link = "https://github.com/AustinDizzy/whiteboard"
+link = "http://your.thewvuexperience.com/"
+source = "https://github.com/AustinDizzy/whiteboard"
 desc = "A community collaborative social issue tracker for tracking student interest in higher education operations issues. Used by the Scott-Braxton 2015 WVU SGA campaign. Written in Go, runs on Google App Engine for pennies/mo."
 color = "#004D58"
 
