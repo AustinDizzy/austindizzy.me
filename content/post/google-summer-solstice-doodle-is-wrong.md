@@ -4,11 +4,12 @@ draft = false
 title = "Google's Summer Solstice Doodle is Wrong"
 tags = ["google", "summer solstice", "google doodle", "wrong", "physics", "visible electromagnetic spectrum"]
 slug = "google-summer-solstice-doodle-is-wrong"
+image = "https://www.google.com/logos/doodles/2015/summer-solstice-2015-northern-hemisphere-6269978919567360.2-hp2x.gif"
 +++
 
 *NOTE*: [Originally written on Medium](https://medium.com/@austindizzy/google-s-summer-solstice-doodle-is-wrong-358373d18587)
 
-Of all companies you’d think to put an unnecessary amount of detail into even the smallest things, [Google](https://google.com) would’ve probably been on that list. However, they got the 2015 Summer Solstice Google Doodle wrong! *GASP*.
+Of all companies you’d think to put an unnecessary amount of detail into even the smallest things, [Google](https://google.com) would’ve probably been on that list. However, they got the [2015 Summer Solstice Google Doodle](https://www.google.com/doodles/summer-solstice-2015-northern-hemisphere) wrong! *GASP*.
 
 How did they get it wrong, exactly? Seems like they forgot about how the [visible electromagnetic spectrum](https://en.wikipedia.org/wiki/Electromagnetic_spectrum) works.
 
@@ -28,7 +29,7 @@ So, in order to comply with the laws of physics, the red popsicle should begin m
 
 Just to go into unnecessary details, as Google typically would’ve, let’s dive into the enthalpic heat of fusion in thermodynamics.
 
-Water has a latent heat of fusion of 334.774 joules per gram. Using the table above, we find the sum of the photon energies for the colors except for red is 11.52 to 12.78 electronvolts (eV). 1 electronvolt is equivalent to 1.6*10^(-19) joules. So as you can see, it’s going to take quite a lot more than a few photons of each color light to melt even a noticably nominal amount of a red popsicle.
+Water has a latent heat of fusion of 334.774 joules per gram. Using the table above, we find the sum of the photon energies for the colors except for red is 11.52 to 12.78 electronvolts (eV). 1 electronvolt is equivalent to 1.6*10^(-19) joules. So as you can see, it’s going to take quite a lot more than a few photons of each color light to melt even a noticeably nominal amount of a red popsicle.
 
 For our play along calculations, we’ll use the [U.S. Department of Agriculture’s Nutrient Database for Standard Reference](http://ndb.nal.usda.gov/) to find the weight of the consumable part of one popsicle, which is 33 grams. We’ll also say that to “begin” to melt (i.e. start dripping, like featured in the doodle), it has to lose at least 5% of its consumable mass. So to melt 1.65 grams of popsicle, we’d need 552.3771 (1.65g * 334.774J/g) joules of energy; in electronvolts, that’s 3.447667*10^(21) eV.
 

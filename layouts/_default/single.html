@@ -1,11 +1,15 @@
 {{ partial "header.html" . }}
   {{ partial "subheader.html" . }}
   <div class="container">
+    {{ if $.Params.image }}
+      <img src='{{ $.Params.image }}' title='{{ or $.Params.imgtext .Title }}' width='100%' />
+    {{ end }}
     <h1 style="text-align:center">
-      <a href='{{ .Permalink }}'>{{ .Title }}</a>
+      {{ .Title }}
     </h1>
     <div style="text-align:center;color:grey;">
-      Posted on {{ .Date.Format "Mon, Jan 2, 2006" }} - {{ .WordCount }} Words, approx. {{.ReadingTime}} min.
+      <a href='{{ .Permalink }}'><i class='fa fa-link'></i></a> &bull; Posted on {{ .Date.Format "Mon, Jan 2, 2006" }}<br>
+      {{ .WordCount }} words, approx. {{.ReadingTime}} min.
     </div>
     <div>
       {{ .Content }}
