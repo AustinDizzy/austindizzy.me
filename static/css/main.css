@@ -75,3 +75,7 @@ footer > p:last-of-type {
   margin-bottom: 0;
   padding-bottom: 1em;
 }
+
+.pure-center {
+  text-align: center;
+}

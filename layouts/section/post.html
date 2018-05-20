@@ -2,12 +2,15 @@
   {{ partial "subheader.html" }}
   <div class="container">
     <div>
-      <h1>Recent Posts</h1>
+      <h2>Recent Posts</h2>
       <ul>
         {{ range .Data.Pages }}
         <li><b><a href="{{ .RelPermalink }}">{{ .Title }}</a></b> - {{ .Date.Format "Mon, Jan 2, 2006" }}</li>
         {{ end }}
       </ul>
+      <p class="pure-center" style="border-top: 1px solid gainsboro">
+        <a href="https://medium.com/@AustinDizzy">View featured posts on Medium <span class="pure-menu-link" style="display: inline-block;"><i class="fab fa-medium-m"></i> @AustinDizzy</span> &rarr;</a>
+      </p>
     </div>
   </div>
   {{ partial "subfooter.html" }}
