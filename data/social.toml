@@ -21,7 +21,7 @@ link = "https://google.com/+AustinDizzy"
 [[profile]]
 name = "youtube"
 username = "ADIZZYSN1PER"
-link = "https://youtube.com/user/ADIZZYSN1PER"
+link = "https://www.youtube.com/c/AustinDizzy"
 
 [[profile]]
 name = "steam-square"
@@ -29,9 +29,24 @@ username = "Austin Dizzy"
 link = "https://steamcommunity.com/id/AustinDizzy"
 
 [[profile]]
+name = "facebook"
+username = "asiford"
+link = "https://fb.me/asiford"
+
+[[profile]]
 name = "instagram"
 username = "AustinDizzy"
 link = "https://instagram.com/AustinDizzy"
+
+[[profile]]
+name = "facebook-messenger"
+username = "asiford"
+link = "https://m.me/asiford"
+
+[[profile]]
+name = "telegram"
+username = "abs007"
+link = "https://m.me/abs007"
 
 [[profile]]
 name = "hacker-news"
@@ -89,11 +104,16 @@ username = "This is Dizzy"
 link = "https://thisisdizzy.tumblr.com"
 
 [[profile]]
-name = "key"
-username = "AustinDizzy"
-link = "https://keybase.io/AustinDizzy"
+name = "keybase"
+username = "abs"
+link = "https://keybase.io/abs"
 
 [[profile]]
 name = "amazon"
 username = "Austin Dizzy's Wishlist"
 link = "http://amzn.com/w/B2XI40D2LFYM"
+
+[[profile]]
+name = "xbox"
+username = "JustCallMeDizzy"
+link = "https://account.xbox.com/en-US/Profile?gamerTag=JustCallMeDizzy"
