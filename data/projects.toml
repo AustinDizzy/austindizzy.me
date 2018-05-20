@@ -1,4 +1,11 @@
 [[project]]
+name = "PRT Status"
+link = "https://prtstat.us"
+source = "https://github.com/AustinDizzy/prtstatus-go"
+desc = "PRT Status is a service which monitors West Virginia University's Personal Rapid Transit system and notifies students, faculty, and staff on service disruptions. Includes an Android app and other mobile services."
+color = "#ED8B00"
+
+[[project]]
 name = "Davine"
 link = "http://www.davine.co"
 source = "https://github.com/AustinDizzy/davine"
@@ -11,13 +18,6 @@ link = "http://your.thewvuexperience.com/"
 source = "https://github.com/AustinDizzy/whiteboard"
 desc = "A community collaborative social issue tracker for tracking student interest in higher education operations issues. Used by the Scott-Braxton 2015 WVU SGA campaign. Written in Go, runs on Google App Engine for pennies/mo."
 color = "#004D58"
-
-[[project]]
-name = "PRT Status"
-link = "https://austindizzy.me/prt/"
-source = "https://github.com/AustinDizzy/prtstatus-go"
-desc = "PRT Status is a service which monitors West Virginia University's Personal Rapid Transit system and notifies students, faculty, and staff on service disruptions."
-color = "#ED8B00"
 
 [[project]]
 name = "Share"
