@@ -7,6 +7,8 @@
 	ga('create', 'UA-48544540-1', 'austindizzy.me');
 	ga('require', 'displayfeatures');
 	ga('send', 'pageview');
+  let year = new Date().getFullYear();
+  for(var elm of document.getElementsByClassName('year')) { elm.textContent = year; }
   </script>
   </body>
 </html>
