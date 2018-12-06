@@ -22,7 +22,7 @@
       <div class="pure-g">
         <div class="pure-u-1">
           {{ with index $.Site.Pages 0 }}
-            <p align="center">
+            <p align="center" class="hidden">
               <b>Most Recent Post:</b> <a href="{{.Permalink}}">{{.Title}}</a>
             </p>
           {{ end }}
