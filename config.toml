@@ -7,5 +7,5 @@ disqusShortname = "austindizzy"
 name = "Austin Dizzy"
 
 [params]
-avatar = "https://www.gravatar.com/avatar/04de35a6b83c8a570575aaf0764b8c00.jpg?s=256"
+avatar = "/img/avatar.jpg"
 twitter = "@AustinDizzy"
