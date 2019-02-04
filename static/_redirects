@@ -1,2 +1,3 @@
 /prt/* https://prtstat.us 302
 /.pgp/key.asc https://keybase.io/abs/key.asc 302
+/post/* /blog/:splat
