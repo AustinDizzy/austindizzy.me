@@ -4,6 +4,7 @@ date = "2015-10-23T16:32:52.654Z"
 title = "Davine is Dead"
 tags = ["davine", "vine social analytics", "metrics", "analytics", "vine data", "open data"]
 slug = "davine-is-dead"
+ignoreupdate = true
 +++
 
 <center><sub>**NOTE:** This post subject to change.</sub></center>
@@ -18,7 +19,7 @@ As the graph below details, I've had to scale back our automated Vine discover p
 
 ### How'd we do?
 
-Davine was running for 10 months and 23 days on [Google Cloud's App Engine](https://cloud.google.com/appengine). If you'd like to further inspect the design or implementation of Davine, the [source code will always be available on GitHub](https://github.com/AustinDizzy/davine "go easy on me, I'm still a college student learning exactly the best way to design and implement large and scalable web apps"). All the data we've ever gathered (~20GB) will soon be available to download as both a flat CSV file and a [BigQuery](https://cloud.google.com/bigquery) dataset (this post and the project's GitHub page will be updated with links when ready).
+Terrible lol. Davine was running for 10 months and 23 days on [Google Cloud's App Engine](https://cloud.google.com/appengine). If you'd like to further inspect the design or implementation of Davine, the [source code will always be available on GitHub](https://github.com/AustinDizzy/davine "go easy on me, I'm still a college student learning exactly the best way to design and implement large and scalable web apps"). All the data we've ever gathered (~20GB) will soon be available to download as both a flat CSV file and a [BigQuery](https://cloud.google.com/bigquery) dataset (this post and the project's GitHub page will be updated with links when ready).
 
 About two months ago, I started implementing a new user fetching design. Previously, it saved all a user's numerical data into a single record with the collection of each stat being a simple array. This made things a lot harder than I anticipated as Google Cloud Datastore has a 1MB record limit. After running like that for 7ish months, I decided we'd need a change to accommodate for the new automated Vine user discovery process I wrote to grow autonomously at a quicker rate. Instead of exponentially increasing that record's time-to-write to the datastore from collecting all of a user's data into a single record, I decided to take advantage of the datastore's quick read speeds and split up all user data into an entity type. By splitting all user data over a `UserData` entity type, I was also able to take advantage of ancestors and ancestor queries to essentially link all of a user's data across the entire datastore.
 

@@ -16,7 +16,7 @@ body {
   font-weight: bold;
   font-size: 2em;
   display:block;
-  font-family: 'PT Sans';
+  font-family: 'consolas';
 }
 #brand-text a {
   color: inherit;
@@ -28,6 +28,12 @@ html, button, input, select, textarea,
 .pure-g [class *= "pure-u"] {
     font-family: 'Open Sans';
 }
+
+.txt-2 {
+  font-family: 'consolas';
+  font-size: 94%;
+}
+
 header {
   padding-bottom: 1em;
   margin-bottom: 1.5em;
@@ -49,10 +55,14 @@ header > div {
   display: inline-block !important;
 }
 #projects li {
-  margin-left: 2em;
-  padding-left: 0.5em;
-  margin-bottom: 1em;
+  margin: 0 0 1em 1em;
+  padding: 0 0 0.25em 0.5em;
 }
+
+#projects li:hover {
+  box-shadow: 1px 2px 2px #ccc;
+}
+
 footer {
   background-color: #f2f2f2;
   text-align: center;
@@ -78,4 +88,32 @@ footer > p:last-of-type {
 
 .pure-center {
   text-align: center;
+}
+
+.m-0 {
+  margin: 0;
+}
+
+.m-t-0 {
+  margin-top: 0;
+}
+
+.m-b-0 {
+  margin-bottom: 0;
+}
+
+.text-right {
+  text-align: right;
+}
+
+#post-listing {
+  list-style-type: none;
+}
+
+#post-listing > li {
+  margin: 1.46em 0;
+}
+
+#post-listing > li > span {
+  color: #666;
 }

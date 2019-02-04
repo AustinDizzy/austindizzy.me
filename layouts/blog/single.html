@@ -1,0 +1,37 @@
+{{ partial "header.html" . }}
+  {{ partial "subheader.html" . }}
+  <div class="container">
+    {{ $fileLocation := printf "%s/blob/master/content/%s" .Site.Params.ghrepo .File.Path }}
+    {{ $updatedMsg := "" }}
+    {{ if ne .Lastmod .Date }}
+    {{ $lastUpdate := .Lastmod.Format "02 Jan 2006 15:04 MST" }}
+    {{ $commit := printf "%s/commit/%s" .Site.Params.ghrepo .GitInfo.Hash }}
+    {{ if not $.Params.ignoreupdate }}
+    {{ $updatedMsg = printf "\n\n\tThis page was updated %s\n\tin %s" $lastUpdate $commit }}
+    {{ end }}
+    {{ end }}
+    {{ printf "<!-- Notice any errors? Want to contribute?\n\tPost source available at %s %s -->" $fileLocation $updatedMsg | safeHTML }}
+    {{ if $.Params.image }}
+      <img src='{{ $.Params.image }}' title='{{ or $.Params.imgtext .Title }}' width='100%' />
+    {{ end }}
+    <h1 style="text-align:center">
+      {{ .Title }}
+    </h1>
+    <div style="text-align:center;color:grey;">
+      <a href='{{ .Permalink }}'><i class='fa fa-link'></i></a> &bull; Published {{ .Date.Format "Mon, Jan 2, 2006" }}{{ if ne .Lastmod .Date}}
+      {{ if not $.Params.ignoreupdate }}
+      (updated {{.Lastmod.Format "Mon, Jan 2, 2006" }})
+      {{ end }}
+      {{ end }}
+      <br>
+      {{ .WordCount }} words, approx. {{.ReadingTime}} min.
+    </div>
+    <div>
+      {{ .Content }}
+    </div>
+    <div>
+      {{ template "_internal/disqus.html" . }}
+    </div>
+  </div>
+  {{ partial "subfooter.html" . }}
+{{ partial "footer.html" . }}

@@ -1,0 +1,21 @@
+{{ partial "header.html" . }}
+  {{ partial "subheader.html" . }}
+  <div class="container">
+    {{ if $.Params.image }}
+      <img src='{{ $.Params.image }}' title='{{ or $.Params.imgtext .Title }}' width='100%' />
+    {{ end }}
+    <h1 style="text-align:center">
+      {{ .Title }}
+    </h1>
+    <div style="text-align:center;color:grey;">
+      <a href='{{ .Permalink }}' rel="noopener noreferrer"><i class='fa fa-link'></i></a> &bull; Published {{ .Date.Format "Mon, Jan 2, 2006" }}{{ if ne .Lastmod .Date}}
+      (updated {{.Lastmod.Format "Mon, Jan 2, 2006" }})
+      {{ end }}
+      <br>
+    </div>
+    <div>
+      {{ .Content }}
+    </div>
+  </div>
+  {{ partial "subfooter.html" . }}
+{{ partial "footer.html" . }}

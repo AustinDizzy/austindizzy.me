@@ -1,0 +1,9 @@
+<span class="enc" id="enc-{{substr . 5 7}}-{{len .}}" data-enc="{{.}}">please enable JavaScript to view this content
+    <script type="text/javascript">
+        var s = "1", e = "3";
+        var n = ["!", "@", "#", "&", "%", "^", "$", "*", "(", ")"];
+        function d(u) { var d = new RegExp("\\" + n[Number(e)], String.fromCharCode(Number(s + Number() + e))); u.outerHTML = atob(u.getAttribute("data-enc")).replace(d, n[Number(s)]).replace(/[a-zA-Z]/g, function (x) { return String.fromCharCode((x <= "Z" ? ((Number(e) ** (Number(e) - Number(s))) * (Number(e) ** (Number(e) - Number(s)) + Number(s))) : ((Number(e) - Number(s)) * ((Number(e) - Number(s)) * (Number(e + s)) - Number(s)))) >= (x = x.charCodeAt(0) + Number(s + e)) ? x : x - (((Number(e) ** (Number(e) - Number(s))) * Number(e)) - Number(s))); }); }
+        var z = document.querySelector("span#enc-{{substr . 5 7}}-{{len .}}");
+        d(z);
+    </script>
+</span>

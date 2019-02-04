@@ -5,6 +5,7 @@ title = "Google's Summer Solstice Doodle is Wrong"
 tags = ["google", "summer solstice", "google doodle", "wrong", "physics", "visible electromagnetic spectrum"]
 slug = "google-summer-solstice-doodle-is-wrong"
 image = "https://www.google.com/logos/doodles/2015/summer-solstice-2015-northern-hemisphere-6269978919567360.2-hp2x.gif"
+ignoreupdate = true
 +++
 
 *NOTE*: [Originally written on Medium](https://medium.com/@austindizzy/google-s-summer-solstice-doodle-is-wrong-358373d18587)

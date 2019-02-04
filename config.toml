@@ -2,6 +2,8 @@ baseurl = "https://austindizzy.me"
 languageCode = "en-us"
 title = "Austin Dizzy"
 disqusShortname = "austindizzy"
+enableGitInfo = "true"
+googleAnalytics = "UA-48544540-1"
 
 [author]
 name = "Austin Dizzy"
@@ -9,3 +11,4 @@ name = "Austin Dizzy"
 [params]
 avatar = "/img/avatar.jpg"
 twitter = "@AustinDizzy"
+ghrepo = "https://github.com/austindizzy/austindizzy.me"

@@ -1,0 +1,33 @@
+{{ partial "header.html" . }}
+  {{ partial "subheader.html" . }}
+  <div class="container">
+    <div>
+      <h2>Projects</h2>
+      <p style="padding-bottom:1em;">other contributions and projects listed on <a href="https://github.com/AustinDizzy" rel="noopener noreferrer">GitHub <i class="fab fa-github" style="color:initial"></i> @AustinDizzy</a> {{ .File.Path }}</p>
+      <div class="pure-menu">
+            <ul class="pure-menu-list" id="projects">
+            {{ range .Data.Pages }}
+              <li class="pure-menu-item" style="border-left:2px solid {{ .Params.projectcolor }}">
+                <span>
+                  <b style="font-size: 110%">{{ .Title }}</b> -
+                  {{if .Params.projectlink}}
+                    <a href="{{ .Params.projectlink | safeURL }}" rel="noopener noreferrer">site</a>
+                  {{end}}
+                  {{if .Params.projectsource}}
+                    , <a href="{{.Params.projectsource}}" rel="noopener noreferrer">source</a>
+                  {{end}}
+                </span>
+                <div>{{.Params.projectdesc | markdownify}}</div>
+                {{if .Params.haspage}}
+                <p class="m-b-0">
+                    <a href="{{if .Params.pagelink}}{{.Params.pagelink}}{{else}}{{.Permalink}}{{end}}" rel="noopener noreferrer">Read More &rarr;</a>
+                </p>
+                {{ end }}
+              </li>
+            {{ end }}
+            </ul>
+          </div>
+    </div>
+  </div>
+  {{ partial "subfooter.html" . }}
+{{ partial "footer.html" . }}

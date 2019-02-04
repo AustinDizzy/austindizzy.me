@@ -1,34 +1,43 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    {{ if $.Params.tags }}
-    <meta name="keywords" content="{{ delimit .Params.tags ", " }}" />
-    {{ end }}
-    {{ if .IsPage }}
-    <meta name="revised" content="{{ .Date.Format "Mon, Jan 2, 2006" }}" />
+<head>
+  <meta charset="utf-8" />
+  {{ if $.Params.tags }}
+  <meta name="keywords" content="{{ delimit .Params.tags ", " }}" />
+  {{ end }}
+  {{ if .IsPage }}
+  <meta name="revised" content="{{ .Date.Format "Mon, Jan 2, 2006" }}" />
 
-    <meta name="twitter:card" content="summary" />
-    <meta name="twitter:site" content="{{ .Site.Params.twitter }}" />
-    <meta name="twitter:title" content="{{ .Title }}" />
-    <meta name="twitter:description" content="{{ .Summary }}" />
-    {{ end }}
-    {{ .Hugo.Generator }}
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="{{ .Site.Params.twitter }}" />
+  <meta name="twitter:title" content="{{ .Title }}" />
+  <meta name="twitter:description" content="{{ .Summary }}" />
+  {{ end }}
+  {{ .Hugo.Generator }}
 
-    {{ range $.Site.Data.meta.tag }}
-    <meta name="{{ .name }}" content="{{ .content }}" />
-    {{ end }}
+  {{ range $.Site.Data.meta.tag }}
+  <meta name="{{ .name }}" content="{{ .content }}" />
+  {{ end }}
 
-    <base href="{{ .Site.BaseURL }}">
-    <title>{{ .Title }}</title>
-    <link rel="canonical" href="{{ .Permalink }}">
-    {{ range .AlternativeOutputFormats -}}
-    {{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
-    {{ end -}}
+  <base href="{{ .Site.BaseURL }}">
+  <title>{{ .Title }}</title>
+  <link rel="canonical" href="{{ .Permalink }}">
+  {{ range .AlternativeOutputFormats -}}
+  {{ printf `
+  <link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
+  {{ end -}}
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/1.0.0/pure-min.css">
-    <link rel="stylesheet" href="https://brick.a.ssl.fastly.net/PT+Sans:400,700/Open+Sans:400,700">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
-    <link rel="stylesheet" href="/css/main.css">
-  </head>
-  <body lang="en">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/1.0.0/pure-min.css">
+  <!--[if lte IE 8]>
+    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-old-ie-min.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-min.css">
+  <!--<![endif]-->
+  <link rel="stylesheet" href="https://brick.a.ssl.fastly.net/PT+Sans:400,700/Open+Sans:400,700">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="/css/main.css">
+</head>
+
+<body lang="en">

@@ -1,73 +1,41 @@
 {{ partial "header.html" . }}
     {{ partial "subheader.html" . }}
+    {{ $wow := "PG4gdWVycz0iem52eWdiOnF2bW1sJmpiai5wYnoiPnF2bW1sJmpiai5wYno8L24+"}}
+    {{ $gmail := "PG4gdWVycz0iem52eWdiOm5oZmd2YS5mdnNiZXEmdHpudnkucGJ6Ij5uaGZndmEuZnZzYmVxJnR6bnZ5LnBiejwvbj4="}}
     <div class="container">
       <div class="pure-g">
-        <div class="pure-u-1-5">
+        <div class="pure-u-5-24">
           <img class="pure-img" src="{{ .Site.Params.avatar }}">
           <br>
-          <div><i class="fa fa-envelope"></i> <span class="encmail">please enable javascript</span></div>
-          <div><i class="fa fa-key"></i> <a href="https://keybase.io/abs/key.asc">my PGP key</a></div>
+          <div><i class="fa-xs fas fa-envelope"></i> {{ partial "enc.html" $wow }}</div>
+          <div><i class="fa-xs fas fa-key"></i> <a href="https://keybase.io/abs/key.asc" rel="noopener noreferrer">/.pgp/key.asc</a></div>
         </div>
-        <div class="pure-u-1-5"></div>
-        <div class="pure-u-3-5">
+        <div class="pure-u-1-24"></div>
+        <div class="pure-u-18-24">
           <span style="font-size:1.5em; font-weight:bold;font-family:'PT Sans'">Who am I?</span>
           <p>
-            My name (read as: pseu&bull;do&bull;nym) is Austin Dizzy and I'm a security researcher and software engineer, having studied computer science and political science at West Virginia University, where I also currently work in our Information Security and Privacy Office.
+            My name (read as: <i>pseu&bull;do&bull;nym</i>) is Austin Dizzy. I've studied computer science and political science at <a href="https://www.wvu.edu" rel="noopener noreferrer">West Virginia University</a>, where I've also worked in our <a href="https://it.wvu.edu/security" rel="noopener noreferrer">Information Security and Privacy Office</a> since 2013.
           </p>
           <p>
-            I've been doing this computer thing for suprisingly about a decade now, where I've mainly focused my efforts in security research, software engineering, and security awareness.
+            I’ve been doing this computer thing for more than a decade now, focusing my efforts in security research, software development, private intelligence, and security awareness.
+          </p>
+          <p>
+            In my free time, you'll find me stargazing, hiking, and appreciating nature; playing chess, casual video games, or competitive esports; or reading, contributing to the community, and spending time with my friends and family.
+          </p>
+          <p class="m-0">
+            Read more about me in my <a href="https://stackoverflow.com/cv/abs" rel="noopener noreferrer"><span style="color:initial"><i class="fab fa-stack-overflow" style="color:#fd7e14"></i> stackoverflow</span> curriculum vitae</a> or on <a href="https://linkedin.com/in/austindizzy" rel="noopener noreferrer" style="display:inline-block"><i class="fab fa-linkedin"></i> LinkedIn / AustinDizzy</a>.
           </p>
         </div>
       </div>
+      <br>
       <div class="pure-g">
-        <div class="pure-u-1">
-          {{ with index $.Site.Pages 0 }}
-            <p align="center" class="hidden">
-              <b>Most Recent Post:</b> <a href="{{.Permalink}}">{{.Title}}</a>
+        <div class="pure-u-1-1">
+            <span style="font-size:1.5em; font-weight: bold; font-family: 'PT Sans'">Contact</span>
+            <p>
+              I primarily respond to emails at both {{ partial "enc.html" $wow}} and {{ partial "enc.html" $gmail }}<br><br>I occasionally post and respond to tweets on Twitter <a href="https://twitter.com/AustinDizzy" rel="noopener noreferrer"><i class="fab fa-twitter"></i> @AustinDizzy</a><br><br>Other approved methods to reach me may be found listed on my <a href="https://keybase.io/abs" rel="noopener noreferrer">Keybase @abs</a>
             </p>
-          {{ end }}
-          <h2>As seen online</h2>
-          <p>If I have a profile on a website, it's typically under a variation of the name AustinDizzy. Below is a list of some of those sites I have a public profile on.</p>
-          <div id="social-links">
-          {{ range $.Site.Data.social.profile }}
-            <a href="{{ .link }}" class="pure-menu-link"><i class="fab fa-{{ .name }}"></i> {{ .username }}</a>
-          {{ end }}
-          </div>
-          <h2>Projects</h2>
-          <div class="pure-menu">
-            <ul class="pure-menu-list" id="projects">
-            {{ range $.Site.Data.projects.project }}
-              <li class="pure-menu-item" data-color="{{ .color }}">
-                <span>
-                  <b style="font-size: 110%">{{ .name }}</b> -
-                  {{if .link}}
-                    <a href="{{ .link | safeURL }}" target="_blank">site</a>
-                  {{end}}
-                  {{if .source}}
-                    , <a href="{{.source}}" target="_blank">source</a>
-                  {{end}}
-                </span>
-                <div>{{.desc | markdownify}}</div>
-              </li>
-            {{ end }}
-            </ul>
-          </div>
-          <h2 id="consulting">Consulting</h2>
-          <div>
-            <p>If you or your business are interested in working with me, please contact me at <span class="encmail">[please enable JavaScript]</span> or any other contact methods listed on this page.</p>
-          </div>
         </div>
       </div>
     </div>
     {{ partial "subfooter.html" . }}
-
-    <script type="text/javascript">
-      var projects = document.getElementById("projects").children;
-      for(var i = 0; i < projects.length; i++)
-        projects[i].style.borderLeft = "2px solid " + projects[i].getAttribute("data-color");
-
-      var m = '<n uers="znvygb:qvmml@jbj.pbz">qvmml@jbj.pbz</n>';
-      for(var i = 0; i < document.getElementsByClassName("encmail").length; i++)
-        document.getElementsByClassName("encmail")[i].innerHTML = m.replace(/[a-zA-Z]/g,function(c){return String.fromCharCode((c<="Z"?90:122)>=(c=c.charCodeAt(0)+13)?c:c-26);});
-    </script>
 {{ partial "footer.html" . }}
