@@ -64,3 +64,59 @@ View my publicly-auditable identity here: https://keybase.io/austindizzy
 
 ==================================================================
 
+==================================================================
+https://keybase.io/abs
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://austindizzy.me
+  * I am abs (https://keybase.io/abs) on keybase.
+  * I have a public key ASAbajjiOXCUMUWuwgGHm1qp2IhVzJrAkU6Prd2pWbhvMQo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "0101039f56cc2018ada2ada47b56e2e02a63ac3f18d0b7d6be22aeb8136769111ec30a",
+      "host": "keybase.io",
+      "kid": "01201b6a38e23970943145aec201879b5aa9d88855cc9ac0914e8faddda959b86f310a",
+      "uid": "78da4a596a88bc5114f071ba59079319",
+      "username": "abs"
+    },
+    "merkle_root": {
+      "ctime": 1549276575,
+      "hash": "1c50032d38564ad1022f3e7169fb84c130abcdd04e4bf3835c0b6dc04737d5c4ba45259e4d33b492453eae625cb8f50899b74db622a4e3db3da03bb5537571e5",
+      "hash_meta": "645aefdd19c8f11ffd8cf39ebc0c4395f512c6ca85f60adf0c8b145966d5dbf4",
+      "seqno": 4692135
+    },
+    "service": {
+      "entropy": "mTFfHfKOsgX8KTvn57qP6t7N",
+      "hostname": "austindizzy.me",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "2.13.2"
+  },
+  "ctime": 1549276590,
+  "expire_in": 504576000,
+  "prev": "92dbbef4cf88c2c2e4319db1424e42adbe9c2cacde264fd44f38823862f9921b",
+  "seqno": 33,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgG2o44jlwlDFFrsIBh5taqdiIVcyawJFOj63dqVm4bzEKp3BheWxvYWTESpcCIcQgktu+9M+IwsLkMZ2xQk5Crb6cLKzeJk/UTziCOGL5khvEIJ0T6IiUiyDOKpude3BSQUt5I4d7IBiAPjXF2Y0rtA6mAgHCo3NpZ8RAD5jMf8IEYWmYVRDigrDFGLr0P1uuva7lNAJvpAfZTQ4QUKXXA1F2TaFo98x+puzbqgjC32j67jkaylgfATltAahzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIKqOcBMfpw8hExZgL9rBRlrZbIZx/0S6AyBvyfW7i/SNo3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/abs
+
+==================================================================
