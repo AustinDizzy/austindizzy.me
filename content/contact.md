@@ -6,11 +6,13 @@ I occasionally post and respond to tweets on Twitter {{< social link="https://tw
 
 I respond to Signal messages at {{< enc "KzEgKDI0MCktNTI0LTk2MDk=" >}} and chats on both Keybase {{< social link="https://keybase.io/abs" brand="keybase" >}}@abs{{< /social >}} and Telegram {{< social link="https://t.me/abs079" brand="telegram" >}}@abs079{{< /social >}}
 
+I contribute to the open source community on GitHub {{< social link="https://github.com/AustinDizzy" brand="github" color="#000" fullcolor="1" >}}@AustinDizzy{{< /social >}}
+
 Once in a blue moon I'll post videos on YouTube {{< social link="https://youtube.com/adizzysn1per" title="please excuse my 14yr old self" brand="youtube" color="#ff0000" fullcolor="1" >}}/ADIZZYSN1PER{{< /social >}}
 
-Sometimes I'll stream what I'm up to and support the community on Twitch {{< social link="https://twitch.tv/justcallmedizzy" brand="twitch" color="#6441A4" fullcolor="1" >}}/justcallmedizzy{{< /social >}}
+At times I'll play games online on Steam {{< social link="https://steamcommunity.com/id/austindizzy" brand="steam" color="#000" >}}/AustinDizzy{{< /social >}} or on Xbox {{< social link="http://live.xbox.com/en-US/Profile?gamertag=JustCallMeDizzy" brand="xbox" color="#5dc21e" fullcolor="1" >}}JustCallMeDizzy{{< /social >}}
 
-I contribute to the open source community on GitHub {{< social link="https://github.com/AustinDizzy" brand="github" color="#000" fullcolor="1" >}}@AustinDizzy{{< /social >}}
+Sometimes I'll stream what I'm up to and support the community on Twitch {{< social link="https://twitch.tv/justcallmedizzy" brand="twitch" color="#6441A4" fullcolor="1" >}}/justcallmedizzy{{< /social >}}
 
 I also operate catch-all addresses at every domain I own which direct to my main email inbox.
 

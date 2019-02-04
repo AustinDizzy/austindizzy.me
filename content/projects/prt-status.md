@@ -8,7 +8,6 @@ projectlink = "https://prtstat.us"
 projectsource = "https://github.com/AustinDizzy/prtstatus-go"
 projectdesc = "PRT Status is a service which monitors West Virginia University's Personal Rapid Transit system and notifies students, faculty, and staff on service disruptions. Includes an Android app and other mobile services."
 projectcolor = "#ED8B00"
-haspage = true
 +++
 
 #### PRT Status
