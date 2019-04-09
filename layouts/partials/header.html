@@ -13,7 +13,7 @@
   <meta name="twitter:title" content="{{ .Title }}" />
   <meta name="twitter:description" content="{{ .Summary }}" />
   {{ end }}
-  {{ .Hugo.Generator }}
+  {{ hugo.Generator }}
 
   {{ range $.Site.Data.meta.tag }}
   <meta name="{{ .name }}" content="{{ .content }}" />
